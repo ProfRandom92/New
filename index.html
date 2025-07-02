@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lena's Haasenwerkstatt - Handgemachte Keramik & Raysin Dekoration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Lena's Haasenwerkstatt</h1>
+                    <span class="tagline">Handgemachte Kunst</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Produkte</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cart-toggle">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Einzigartige Handwerkskunst</h2>
+            <p>Entdecken Sie unsere wunderschönen handgemachten Keramiken und Raysin-Dekorationen, jedes Stück mit Liebe und Sorgfalt gefertigt.</p>
+            <a href="#products" class="cta-button">Produkte entdecken</a>
+        </div>
+        <div class="hero-image">
+            <div class="ceramic-placeholder">
+                <i class="fas fa-leaf"></i>
+                <span>Handgemachte Keramik</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Unsere Produktkategorien</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="keramik">
+                    <div class="category-image">
+                        <i class="fas fa-wine-glass-alt"></i>
+                    </div>
+                    <h3>Keramik</h3>
+                    <p>Handgetöpferte Vasen, Schalen und Geschirr</p>
+                    <button class="category-btn">Entdecken</button>
+                </div>
+                <div class="category-card" data-category="raysin">
+                    <div class="category-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Raysin Dekoration</h3>
+                    <p>Dekorative Figuren und Ornamente</p>
+                    <button class="category-btn">Entdecken</button>
+                </div>
+                <div class="category-card" data-category="geschenke">
+                    <div class="category-image">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Geschenksets</h3>
+                    <p>Liebevoll zusammengestellte Geschenkideen</p>
+                    <button class="category-btn">Entdecken</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Beliebte Produkte</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Über Lena's Haasenwerkstatt</h2>
+                    <p>In unserer kleinen Werkstatt entstehen mit viel Liebe zum Detail einzigartige Keramik- und Raysin-Kunstwerke. Jedes Stück wird sorgfältig von Hand gefertigt und ist somit ein Unikat.</p>
+                    <p>Unsere Leidenschaft für Handwerkskunst spiegelt sich in jedem Produkt wider. Von eleganten Vasen bis hin zu verspielten Dekorationselementen - bei uns finden Sie das perfekte Stück für Ihr Zuhause.</p>
+                </div>
+                <div class="about-image">
+                    <div class="workshop-placeholder">
+                        <i class="fas fa-hammer"></i>
+                        <span>Handwerkstradition</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Musterstraße 123<br>12345 Musterstadt</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+49 123 456789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-Mail</h4>
+                            <p>info@haasenwerkstatt.de</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Öffnungszeiten</h4>
+                            <p>Mo-Fr: 9:00-18:00<br>Sa: 10:00-16:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Nachricht senden</h3>
+                    <input type="text" placeholder="Ihr Name" required>
+                    <input type="email" placeholder="Ihre E-Mail" required>
+                    <textarea placeholder="Ihre Nachricht" required></textarea>
+                    <button type="submit">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Lena's Haasenwerkstatt</h4>
+                    <p>Handgemachte Keramik und Raysin-Dekoration mit Liebe zum Detail.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Schnelle Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Produkte</a></li>
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">AGB</a></li>
+                        <li><a href="#">Widerrufsrecht</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Zahlungsarten</h4>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-paypal"></i>
+                        <i class="fas fa-university"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lena's Haasenwerkstatt. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Warenkorb</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Gesamt: €<span id="cart-total">0.00</span></strong>
+                </div>
+                <button class="checkout-btn">Zur Kasse</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
