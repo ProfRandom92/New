@@ -66,8 +66,8 @@ const products = [
     }
 ];
 
-// Shopping cart
-let cart = [];
+// Shopping cart (persistent across pages)
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // DOM elements
 const cartModal = document.getElementById('cart-modal');
@@ -133,6 +133,7 @@ function addToCart(productId) {
         });
     }
     
+    saveCart();
     updateCartDisplay();
     showNotification('Produkt wurde zum Warenkorb hinzugefügt!');
 }
@@ -140,6 +141,7 @@ function addToCart(productId) {
 // Remove product from cart
 function removeFromCart(productId) {
     cart = cart.filter(item => item.id !== productId);
+    saveCart();
     updateCartDisplay();
 }
 
@@ -206,11 +208,11 @@ function setupEventListeners() {
         hamburger.classList.toggle('active');
     });
     
-    // Category filtering
+    // Category filtering - redirect to products page
     document.querySelectorAll('.category-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const category = e.target.closest('.category-card').dataset.category;
-            filterProducts(category);
+            window.location.href = `products.html?category=${category}`;
         });
     });
     
@@ -282,6 +284,7 @@ function handleCheckout() {
     // For demo purposes, clear the cart after a delay
     setTimeout(() => {
         cart = [];
+        saveCart();
         updateCartDisplay();
         cartModal.style.display = 'none';
         showNotification('Bestellung erfolgreich abgeschlossen! (Demo)');
@@ -417,3 +420,8 @@ document.querySelector('.ceramic-placeholder').addEventListener('click', () => {
     
     showNotification('🏺 Handgemacht mit Liebe! 💕');
 });
+
+// Save cart to localStorage
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}

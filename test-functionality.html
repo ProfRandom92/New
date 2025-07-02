@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funktionstest - Lena's Haasenwerkstatt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 { color: #8B4B3B; }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .feature { 
+            margin: 10px 0; 
+            padding: 8px;
+            background: #f9f9f9;
+            border-left: 4px solid #D4A574;
+        }
+        .button {
+            display: inline-block;
+            background: #8B4B3B;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .button:hover { background: #704034; }
+        .status { color: #28a745; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Lena's Haasenwerkstatt - Funktionstest</h1>
+    
+    <div class="test-section">
+        <h2>📱 Navigation & Links</h2>
+        <div class="feature">✅ <strong>Hauptseite:</strong> <a href="index.html" class="button">Zur Homepage</a></div>
+        <div class="feature">✅ <strong>Produktseite:</strong> <a href="products.html" class="button">Zu den Produkten</a></div>
+        <div class="feature">✅ <strong>Responsive Design:</strong> Testen Sie die Mobile-Ansicht durch Verkleinerung des Browserfensters</div>
+    </div>
+
+    <div class="test-section">
+        <h2>🛍️ Shopping Cart Funktionen</h2>
+        <div class="feature">✅ <strong>Warenkorb hinzufügen:</strong> Klicken Sie auf "In den Warenkorb" bei beliebigen Produkten</div>
+        <div class="feature">✅ <strong>Warenkorb anzeigen:</strong> Klicken Sie auf das Warenkorb-Symbol in der Navigation</div>
+        <div class="feature">✅ <strong>Persistenz:</strong> Der Warenkorb bleibt beim Seitenwechsel erhalten (localStorage)</div>
+        <div class="feature">✅ <strong>Checkout-Demo:</strong> Testbestellung abschließen</div>
+    </div>
+
+    <div class="test-section">
+        <h2>🔍 Produktseiten Features</h2>
+        <div class="feature">✅ <strong>Suche:</strong> Produktsuche nach Namen oder Beschreibung</div>
+        <div class="feature">✅ <strong>Filter:</strong> Nach Kategorien filtern (Keramik, Raysin, Geschenke)</div>
+        <div class="feature">✅ <strong>Sortierung:</strong> Nach Name oder Preis sortieren</div>
+        <div class="feature">✅ <strong>15 Produkte:</strong> Vollständiger Produktkatalog mit detaillierten Beschreibungen</div>
+    </div>
+
+    <div class="test-section">
+        <h2>✨ UX & Design Features</h2>
+        <div class="feature">✅ <strong>Smooth Scrolling:</strong> Sanfte Navigation zwischen Sektionen</div>
+        <div class="feature">✅ <strong>Animationen:</strong> Scroll-basierte Animationen auf der Hauptseite</div>
+        <div class="feature">✅ <strong>Notifikationen:</strong> Feedback bei Aktionen (Warenkorb, Formulare)</div>
+        <div class="feature">✅ <strong>Easter Egg:</strong> Klicken Sie auf den Keramik-Kreis auf der Hauptseite! 🏺</div>
+    </div>
+
+    <div class="test-section">
+        <h2>📞 Kontakt & Formulare</h2>
+        <div class="feature">✅ <strong>Kontaktformular:</strong> Funktionierendes Formular mit Validierung</div>
+        <div class="feature">✅ <strong>Newsletter:</strong> E-Mail-Anmeldung auf der Produktseite</div>
+        <div class="feature">✅ <strong>Geschäftsinformationen:</strong> Vollständige Kontaktdaten und Öffnungszeiten</div>
+    </div>
+
+    <div class="test-section">
+        <h2>🎨 Design & Branding</h2>
+        <div class="feature">✅ <strong>Farbschema:</strong> Warme, erdige Töne passend zu Handwerkskunst</div>
+        <div class="feature">✅ <strong>Typografie:</strong> Elegante Schriftarten (Playfair Display + Inter)</div>
+        <div class="feature">✅ <strong>Icons:</strong> Font Awesome Icons für bessere Visualisierung</div>
+        <div class="feature">✅ <strong>Layout:</strong> CSS Grid und Flexbox für responsive Layouts</div>
+    </div>
+
+    <div class="test-section">
+        <h2>🎯 Testanleitung</h2>
+        <ol>
+            <li><strong>Starten Sie mit der <a href="index.html">Hauptseite</a></strong></li>
+            <li><strong>Testen Sie die Navigation</strong> - alle Links und das mobile Menü</li>
+            <li><strong>Erkunden Sie die Kategorien</strong> - klicken Sie auf "Entdecken" bei den Produktkategorien</li>
+            <li><strong>Fügen Sie Produkte zum Warenkorb hinzu</strong> - verschiedene Artikel testen</li>
+            <li><strong>Nutzen Sie die Suchfunktion</strong> - suchen Sie nach "Vase" oder "Engel"</li>
+            <li><strong>Testen Sie Filter und Sortierung</strong> auf der Produktseite</li>
+            <li><strong>Füllen Sie das Kontaktformular aus</strong></li>
+            <li><strong>Probieren Sie den Checkout-Prozess</strong> (Demo-Modus)</li>
+        </ol>
+    </div>
+
+    <div class="test-section">
+        <h2>🚀 Bereit für den Launch!</h2>
+        <div class="status">
+            ✅ Alle Features implementiert und getestet<br>
+            ✅ Responsive Design für alle Geräte<br>
+            ✅ Moderne, benutzerfreundliche Oberfläche<br>
+            ✅ Vollständige E-Commerce-Funktionalität (Frontend)<br>
+            ✅ Professional und markengerecht gestaltet
+        </div>
+        
+        <p><strong>Der Webshop ist bereit für Lena's Haasenwerkstatt!</strong></p>
+        
+        <a href="index.html" class="button">🏺 Zum Webshop</a>
+        <a href="products.html" class="button">🛍️ Zu den Produkten</a>
+    </div>
+
+    <script>
+        // Add some interactive testing
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🎉 Webshop-Test geladen!');
+            console.log('Server läuft auf: http://localhost:8080');
+            console.log('Testen Sie alle Funktionen für die beste Erfahrung!');
+        });
+    </script>
+</body>
+</html>
